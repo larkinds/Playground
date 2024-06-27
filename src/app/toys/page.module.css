@@ -1,0 +1,20 @@
+
+.parent {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toyContainer {
+    height: 20em;
+    width: 50%;
+    padding: 32px;
+    /* todo: every other container gets center */
+    border: 1px solid rgba(255, 255, 255, .4);
+}
+
+.toy {
+    height: 15em;
+    padding: 24px;
+    background-color: var(--cards-background);
+}

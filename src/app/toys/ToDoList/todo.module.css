@@ -1,0 +1,62 @@
+.todoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  margin: .3em;
+  /* display: inline-block; */
+  border-radius: 50%;
+  background: lightpink;
+  border: 1px solid darkmagenta;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  
+}
+
+.checkbox::before {
+  content: '';
+  width: .75em;
+  height: .75em;
+  border-radius: 50%;
+  box-shadow: inset 1em 1em darkmagenta;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0) ;
+  transition: 120ms transform ease-in-out;
+  transform-origin: top right;
+}
+
+.checkbox:checked::before  {
+    transform: scale(1) ;
+}
+
+.checkbox:hover {
+  
+}
+
+.checkbox:focus {
+    
+}
+
+.delete-button {
+    margin-left: .6em;
+    width: 1em;
+    height: 1em;
+    border-radius: 25%;
+    border: 2px solid lightpink;
+    background-color: lightpink;
+    color: #8b008b;
+    display: grid;
+    place-content: center;
+    transform: translateY(0.25em);
+}
+
+.delete-button:hover {
+  transform: scale(1.2) translateY(0.25em);
+}

@@ -27,8 +27,6 @@ export default function ToDoList() {
 
   return (
     <>
-      <h1>Classic... A ToDo List</h1>
-
       <form action="submit" onSubmit={addTodo}>
         <input
           style={{ color: 'darkmagenta', borderRadius: '2%' }}
@@ -49,7 +47,7 @@ export default function ToDoList() {
           Add
         </button>
       </form>
-      <ul>
+      <ul style={{display: "block", height: "81%", overflow: "auto"}}>
         {todos.map((todo) => (
           <ToDo
             key={todo.key}

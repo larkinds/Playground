@@ -1,9 +1,9 @@
-import Card from '../Cards/Card';
+import Card from './Cards/Card';
 import { ColorDial } from './ColorDial/page';
 import ToDoList from './ToDoList/page';
 import styles from './page.module.css';
 
-export default function Toys() {
+export default function Play() {
   return (
     <div className={styles.parent}>
       <Card title="Todo List">

@@ -4,7 +4,7 @@ export default function ToDo({ id, note, removeTodo }: {id: string, note: string
   return (
     <li className={styles.todoContainer}>
       <input className={styles.checkbox} type="checkbox" id={note} value={note} />
-      <label htmlFor={note}>{note}</label>
+      <label style={{textAlign: "start"}} htmlFor={note}>{note}</label>
       <button className={styles["delete-button"]} onClick={() => removeTodo(id)}>x</button>
     </li>
   );

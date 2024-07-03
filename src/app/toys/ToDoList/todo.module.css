@@ -1,6 +1,8 @@
 .todoContainer {
-    display: flex;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: [first] 1fr [second] 6fr [third] 1fr;
+  width: 100%;
+  justify-items: start
 }
 
 
@@ -10,7 +12,6 @@
   width: 1em;
   height: 1em;
   margin: .3em;
-  /* display: inline-block; */
   border-radius: 50%;
   background: lightpink;
   border: 1px solid darkmagenta;
